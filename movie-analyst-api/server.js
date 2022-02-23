@@ -5,7 +5,7 @@ const mysql = require('mysql')
 const util = require('util')
 
 const pool = mysql.createPool({
-  host: process.env.DB_HOST || '10.0.1.53:3306',
+  host: process.env.DB_HOST || '10.0.1.53',
   user: process.env.DB_USER || 'Admin',
   password: process.env.DB_PASS || 'password',
   database: process.env.DB_NAME || 'movie_db'
